@@ -1,10 +1,12 @@
 import { List, Map } from 'immutable';
 
+export const INITIAL_STATE = Map();
+
 export function setEntries(state, entries) {
   return state.set('entries', List(entries));
 }
 
-funtion getWinners(vote) {
+function getWinners(vote) {
   if (!vote) return [];
 
   const [a, b] = vote.get('pair');

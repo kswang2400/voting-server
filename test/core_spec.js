@@ -61,7 +61,7 @@ describe('application logic', () => {
         vote: Map({
           pair: List.of('Sunshine', 'Millions')
         }),
-        entires: List.of('127 Hours', 'Trainspotting')
+        entries: List.of('127 Hours', 'Trainspotting')
       }));
     });
 
@@ -79,7 +79,7 @@ describe('application logic', () => {
 
       const newState = next(state);
 
-      expect(nextState).to.equal(Map({
+      expect(newState).to.equal(Map({
         vote: Map({
           pair: List.of('Sunshine', 'Millions')
         }),
